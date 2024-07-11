@@ -1,6 +1,6 @@
 CREATE TABLE Projeto (
     numero INT PRIMARY KEY,
-    descricao TEXT NOT NULL,
+    descricao TEXT NOT NULL
 );
 
 CREATE TABLE Comissao (
