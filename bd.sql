@@ -466,6 +466,7 @@ INSERT INTO ProjetoCargoPesquisador (projeto_numero, cargo_codigo, pesquisador_c
     (20, 6, '67890123456');
 
 
+
 CREATE TABLE ArtigoEscritoPorPesquisador (
     artigo_matricula INT,
     pesquisador_cpf CHAR(11),
