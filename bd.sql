@@ -85,6 +85,19 @@ VALUES
     ('89012765432', 'Rafael Martins', 'Universidade Federal de Uberlândia', '19-01-1994', FALSE),
     ('90123876543', 'Sofia Campos', 'Universidade Federal de Lavras', '14-04-1992', FALSE),
     ('01234987654', 'Tiago Fernandes', 'Universidade Federal de Sergipe', '31-10-1988', TRUE);
+    ('11223344556', 'Ubiratan Castro', 'Universidade Federal de Mato Grosso do Sul', '15-05-1975', TRUE),
+    ('22334455667', 'Valéria Souza', 'Universidade Federal do Amazonas', '30-11-1980', TRUE),
+    ('33445566778', 'Wagner Rocha', 'Universidade Federal de Rondônia', '25-09-1972', TRUE),
+    ('44556677889', 'Xavier Lima', 'Universidade Federal de Roraima', '05-06-1978', TRUE),
+    ('55667788990', 'Yasmin Silva', 'Universidade Federal do Acre', '12-12-1985', TRUE),
+    ('66778899001', 'Zoe Costa', 'Universidade Federal de Alagoas', '23-03-1983', TRUE);
+    ('77889900112', 'Ana Paula Ferreira', 'Universidade Federal do Tocantins', '14-07-1981', TRUE),
+    ('88990011223', 'Bruno Silva', 'Universidade Federal de Pernambuco', '22-02-1984', TRUE),
+    ('99001122334', 'Carla Nunes', 'Universidade Federal de Ouro Preto', '15-08-1987', TRUE),
+    ('00112233445', 'Daniel Moreira', 'Universidade Federal de Pelotas', '18-11-1975', TRUE),
+    ('11223344557', 'Elaine Oliveira', 'Universidade Federal do Amazonas', '09-03-1979', TRUE),
+    ('22334455668', 'Felipe Sousa', 'Universidade Federal do Maranhão', '02-05-1982', TRUE);
+
 
 
 CREATE TABLE Atividade (
@@ -95,26 +108,46 @@ CREATE TABLE Atividade (
 );
 
 INSERT INTO Atividade (codigo, descricao, projeto_numero) VALUES
-    (1, 'Análise de requisitos para o sistema de inventário', 1),
-    (2, 'Desenvolvimento do frontend para a solução de e-commerce', 2),
-    (3, 'Criação de funcionalidades para o rastreamento de fitness', 3),
-    (4, 'Configuração do ambiente de nuvem para migração de dados', 4),
-    (5, 'Desenvolvimento do módulo de atendimento ao cliente do portal', 5),
-    (6, 'Criação de relatórios para análise de dados', 6),
-    (7, 'Integração do CRM com sistemas existentes', 7),
-    (8, 'Automatização de processos de contratação e demissão', 8),
-    (9, 'Desenvolvimento de funcionalidades para gestão de turmas e alunos', 9),
-    (10, 'Criação do layout do site para a ONG', 10),
-    (11, 'Desenvolvimento de protocolos de segurança para a rede', 11),
-    (12, 'Desenvolvimento do sistema de agendamento e gerenciamento de consultas', 12),
-    (13, 'Desenvolvimento de um módulo de categorização de notícias', 13),
-    (14, 'Implementação do sistema de pagamentos e checkout', 14),
-    (15, 'Criação de cursos e conteúdo para a plataforma de educação online', 15),
-    (16, 'Desenvolvimento de estratégias e campanhas para marketing digital', 16),
-    (17, 'Implementação de funcionalidades para gestão de tarefas e projetos', 17),
-    (18, 'Desenvolvimento de recursos de colaboração e comunicação para a rede social', 18),
-    (19, 'Desenvolvimento de funcionalidades de rastreamento de pedidos para o aplicativo de delivery', 19),
-    (20, 'Desenvolvimento do módulo de reservas e check-in para o sistema de hotéis', 20);
+(1, 'Coleta de dados de campo', 1),
+(2, 'Análise de dados', 1),
+(3, 'Desenvolvimento de protótipo', 2),
+(4, 'Testes de protótipo', 2),
+(5, 'Revisão bibliográfica', 3),
+(6, 'Desenvolvimento de metodologia', 3),
+(7, 'Coleta de amostras', 4),
+(8, 'Análise laboratorial', 4),
+(9, 'Desenvolvimento de software', 5),
+(10, 'Testes de usabilidade', 5),
+(11, 'Estudo de viabilidade', 6),
+(12, 'Análise de impacto', 6),
+(13, 'Coleta de dados clínicos', 7),
+(14, 'Ensaios clínicos', 7),
+(15, 'Desenvolvimento de algoritmo', 8),
+(16, 'Validação de algoritmo', 8),
+(17, 'Levantamento de requisitos', 9),
+(18, 'Desenvolvimento de aplicação web', 9),
+(19, 'Modelagem matemática', 10),
+(20, 'Simulação computacional', 10),
+(21, 'Desenvolvimento de protocolo', 11),
+(22, 'Testes de campo', 11),
+(23, 'Pesquisa de mercado', 12),
+(24, 'Análise de dados de mercado', 12),
+(25, 'Desenvolvimento de hardware', 13),
+(26, 'Testes de hardware', 13),
+(27, 'Desenvolvimento de interface', 14),
+(28, 'Testes de interface', 14),
+(29, 'Coleta de dados experimentais', 15),
+(30, 'Análise estatística', 15),
+(31, 'Revisão sistemática', 16),
+(32, 'Meta-análise', 16),
+(33, 'Desenvolvimento de modelo teórico', 17),
+(34, 'Testes empíricos', 17),
+(35, 'Planejamento de experimento', 18),
+(36, 'Execução de experimento', 18),
+(37, 'Desenvolvimento de aplicativo móvel', 19),
+(38, 'Testes de aplicativo móvel', 19),
+(39, 'Desenvolvimento de jogo educativo', 20),
+(40, 'Testes de jogo educativo', 20);
 
 
 CREATE TABLE Subatividade (
@@ -165,7 +198,150 @@ INSERT INTO Subatividade (codigo, descricao, atividade_super) VALUES
     (37, 'Desenvolver funcionalidades de rastreamento de status de pedidos', 19),
     (38, 'Criar módulo de avaliação de entregas e feedback dos clientes', 19),
     (39, 'Desenvolver funcionalidades de reservas e cancelamentos de quartos de hotel', 20),
-    (40, 'Criar sistema de gerenciamento de disponibilidade de quartos e tarifas', 20);
+    (40, 'Criar sistema de gerenciamento de disponibilidade de quartos e tarifas', 20),
+    (41, 'Planejamento de coleta de dados', 1),
+    (42, 'Execução de coleta de dados', 1),
+    (43, 'Processamento de dados brutos', 2),
+    (44, 'Análise estatística de dados', 2),
+    (45, 'Desenvolvimento de protótipos iniciais', 3),
+    (46, 'Revisão e ajustes de protótipos', 3),
+    (47, 'Execução de testes unitários', 4),
+    (48, 'Análise de resultados dos testes', 4),
+    (49, 'Pesquisa de literatura', 5),
+    (50, 'Compilação de referências', 5),
+    (51, 'Desenho de métodos experimentais', 6),
+    (52, 'Validação de métodos', 6),
+    (53, 'Seleção de amostras', 7),
+    (54, 'Preparação de amostras', 7),
+    (55, 'Execução de análises químicas', 8),
+    (56, 'Interpretação de resultados', 8),
+    (57, 'Planejamento de arquitetura de software', 9),
+    (58, 'Codificação de módulos de software', 9),
+    (59, 'Desenho de testes de usabilidade', 10),
+    (60, 'Execução de testes com usuários', 10),
+    (61, 'Pesquisa de viabilidade técnica', 11),
+    (62, 'Análise de viabilidade econômica', 11),
+    (63, 'Recolhimento de dados clínicos', 12),
+    (64, 'Análise preliminar de dados', 12),
+    (65, 'Desenvolvimento de algoritmo inicial', 13),
+    (66, 'Testes e refinamento de algoritmo', 13),
+    (67, 'Definição de requisitos do sistema', 14),
+    (68, 'Implementação de funcionalidades principais', 14),
+    (69, 'Desenvolvimento de modelos matemáticos', 15),
+    (70, 'Validação e ajuste de modelos', 15),
+    (71, 'Planejamento de protocolo', 16),
+    (72, 'Revisão de protocolo', 16),
+    (73, 'Análise de mercado', 17),
+    (74, 'Identificação de oportunidades de mercado', 17),
+    (75, 'Desenvolvimento de componentes de hardware', 18),
+    (76, 'Testes de componentes de hardware', 18),
+    (77, 'Planejamento de interface', 19),
+    (78, 'Desenvolvimento de protótipos de interface', 19),
+    (79, 'Execução de experimentos', 20),
+    (80, 'Análise de resultados experimentais', 20),
+    (81, 'Revisão de literatura', 21),
+    (82, 'Meta-análise de dados', 21),
+    (83, 'Desenvolvimento de modelo teórico inicial', 22),
+    (84, 'Testes de modelo teórico', 22),
+    (85, 'Planejamento de experimento inicial', 23),
+    (86, 'Revisão e ajustes de plano experimental', 23),
+    (87, 'Desenvolvimento de funcionalidades básicas do aplicativo', 24),
+    (88, 'Testes de funcionalidades do aplicativo', 24),
+    (89, 'Planejamento de desenvolvimento do jogo educativo', 25),
+    (90, 'Implementação de funcionalidades de jogo educativo', 25);
+
+
+CREATE TABLE AtividadeRealizadaPorPesquisador (
+    codigo_atividade INT,
+    cpf_pesquisador VARCHAR(11),
+    PRIMARY KEY (codigo_atividade, cpf_pesquisador),
+    FOREIGN KEY (codigo_atividade) REFERENCES Atividade(codigo),
+    FOREIGN KEY (cpf_pesquisador) REFERENCES Pesquisador(cpf)
+)
+
+INSERT INTO AtividadeRealizadaPorPesquisador (codigo_atividade, cpf_pesquisador) VALUES
+(1, '12345678901'),
+(1, '23456789012'),
+(2, '34567890123'),
+(2, '45678901234'),
+(3, '56789012345'),
+(3, '67890123456'),
+(4, '78901234567'),
+(4, '89012345678'),
+(5, '90123456789'),
+(5, '01234567890'),
+(6, '12345098765'),
+(6, '23456109876'),
+(7, '34567210987'),
+(7, '45678321098'),
+(8, '56789432109'),
+(8, '67890543210'),
+(9, '78901654321'),
+(9, '89012765432'),
+(10, '90123876543'),
+(10, '01234987654'),
+(11, '11223344556'),
+(11, '22334455667'),
+(12, '33445566778'),
+(12, '44556677889'),
+(13, '55667788990'),
+(13, '66778899001'),
+(14, '77889900112'),
+(14, '88990011223'),
+(15, '99001122334'),
+(15, '00112233445'),
+(16, '11223344557'),
+(16, '22334455668'),
+(17, '12345678901'),
+(17, '23456789012'),
+(18, '34567890123'),
+(18, '45678901234'),
+(19, '56789012345'),
+(19, '67890123456'),
+(20, '78901234567'),
+(20, '89012345678'),
+(21, '90123456789'),
+(21, '01234567890'),
+(22, '12345098765'),
+(22, '23456109876'),
+(23, '34567210987'),
+(23, '45678321098'),
+(24, '56789432109'),
+(24, '67890543210'),
+(25, '78901654321'),
+(25, '89012765432'),
+(26, '90123876543'),
+(26, '01234987654'),
+(27, '11223344556'),
+(27, '22334455667'),
+(28, '33445566778'),
+(28, '44556677889'),
+(29, '55667788990'),
+(29, '66778899001'),
+(30, '77889900112'),
+(30, '88990011223'),
+(31, '99001122334'),
+(31, '00112233445'),
+(32, '11223344557'),
+(32, '22334455668'),
+(33, '12345678901'),
+(33, '23456789012'),
+(34, '34567890123'),
+(34, '45678901234'),
+(35, '56789012345'),
+(35, '67890123456'),
+(36, '78901234567'),
+(36, '89012345678'),
+(37, '90123456789'),
+(37, '01234567890'),
+(38, '12345098765'),
+(38, '23456109876'),
+(39, '34567210987'),
+(39, '45678321098'),
+(40, '56789432109'),
+(40, '67890543210');
+
+
 
 
 CREATE TABLE Cargo (
@@ -265,46 +441,26 @@ CREATE TABLE ComissaoResponsavel (
 
 INSERT INTO ComissaoResponsavel (comissao_codigo, pesquisador_cpf) VALUES
     (101, '12345678901'),  
-    (101, '23456789012'),  
     (102, '34567890123'),  
-    (102, '45678901234'),  
-    (103, '56789012345'),  
-    (103, '67890123456'),  
+    (103, '45678901234'),  
     (104, '78901234567'),  
-    (104, '89012345678'),  
     (105, '90123456789'),  
-    (105, '01234567890'),  
-    (106, '12345678901'),  
-    (106, '23456789012'),  
-    (107, '34567890123'),  
-    (107, '45678901234'),  
-    (108, '56789012345'),  
-    (108, '67890123456'),  
-    (109, '78901234567'),  
-    (109, '89012345678'),  
-    (110, '90123456789'), 
-    (110, '01234567890'), 
-    (111, '12345678901'), 
-    (111, '23456789012'), 
-    (112, '34567890123'), 
-    (112, '45678901234'), 
-    (113, '56789012345'), 
-    (113, '67890123456'), 
-    (114, '78901234567'), 
-    (114, '89012345678'), 
-    (115, '90123456789'), 
-    (115, '01234567890'), 
-    (116, '12345678901'), 
-    (116, '23456789012'), 
-    (117, '34567890123'), 
-    (117, '45678901234'), 
-    (118, '56789012345'), 
-    (118, '67890123456'), 
-    (119, '78901234567'), 
-    (119, '89012345678'), 
-    (120, '90123456789'), 
-    (120, '01234567890');
-
+    (106, '12345098765'),  
+    (107, '45678321098'),  
+    (108, '67890543210'),  
+    (109, '78901654321'),  
+    (110, '01234987654'),
+    (111, '11223344556'),  
+    (112, '22334455667'),  
+    (113, '33445566778'),  
+    (114, '44556677889'),  
+    (115, '55667788990'),  
+    (116, '66778899001'),
+    (117, '77889900112'),  
+    (118, '88990011223'),  
+    (119, '99001122334'),  
+    (120, '00112233445'),  
+    (121, '11223344557');
 
 
 CREATE TABLE ComissaoAprovaProjeto (
@@ -340,34 +496,35 @@ INSERT INTO ComissaoAprovaProjeto (comissao_codigo, projeto_numero) VALUES
 
 CREATE TABLE ComissaoParticipadaPesquisador (
     comissao_codigo INT,
-    pesquisador_cpf CHAR(11),
-    papel VARCHAR(50),
-    PRIMARY KEY (comissao_codigo, pesquisador_cpf),
+    pesquisador_cpf VARCHAR(11),
+    cargo_codigo INT,
     FOREIGN KEY (comissao_codigo) REFERENCES Comissao(codigo),
-    FOREIGN KEY (pesquisador_cpf) REFERENCES Pesquisador(cpf)
+    FOREIGN KEY (pesquisador_cpf) REFERENCES Pesquisador(cpf),
+    FOREIGN KEY (cargo_codigo) REFERENCES Cargo(codigo)
 );
 
-INSERT INTO ComissaoParticipadaPesquisador (comissao_codigo, pesquisador_cpf, papel) VALUES
-    (101, '12345678901', 'Presidente'),
-    (101, '23456789012', 'Membro'),
-    (102, '34567890123', 'Vice-presidente'),
-    (102, '45678901234', 'Membro'),
-    (103, '56789012345', 'Membro'),
-    (103, '67890123456', 'Relator'),
-    (104, '78901234567', 'Presidente'),
-    (104, '89012345678', 'Membro'),
-    (105, '90123456789', 'Vice-presidente'),
-    (105, '01234567890', 'Membro'),
-    (106, '12345678901', 'Membro'),
-    (106, '23456789012', 'Relator'),
-    (107, '34567890123', 'Presidente'),
-    (107, '45678901234', 'Membro'),
-    (108, '56789012345', 'Vice-presidente'),
-    (108, '67890123456', 'Membro'),
-    (109, '78901234567', 'Relator'),
-    (109, '89012345678', 'Presidente'),
-    (110, '90123456789', 'Membro'),
-    (110, '01234567890', 'Vice-presidente');
+
+INSERT INTO ComissaoParticipadaPesquisador (comissao_codigo, pesquisador_cpf, cargo_codigo) VALUES
+    (101, '12345678901', 1),  -- Desenvolvedor de Software
+    (101, '23456789012', 3),  -- Gerente de Projetos
+    (102, '34567890123', 2),  -- Analista de Sistemas
+    (102, '45678901234', 4),  -- Arquiteto de Soluções
+    (103, '56789012345', 5),  -- Engenheiro de Dados
+    (103, '67890123456', 6),  -- Administrador de Redes
+    (104, '78901234567', 7),  -- Especialista em Segurança da Informação
+    (104, '89012345678', 8),  -- Consultor de TI
+    (105, '90123456789', 9),  -- Analista de Suporte Técnico
+    (105, '01234567890', 10), -- Coordenador de TI
+    (106, '12345678901', 11), -- Analista de Qualidade de Software
+    (106, '23456789012', 12), -- Designer de Interface
+    (107, '34567890123', 13), -- Gerente de Produtos
+    (107, '45678901234', 14), -- Especialista em Nuvem
+    (108, '56789012345', 15), -- Desenvolvedor Frontend
+    (108, '67890123456', 16), -- Desenvolvedor Backend
+    (109, '78901234567', 17), -- Engenheiro de Software
+    (109, '89012345678', 18), -- Analista de Business Intelligence
+    (110, '90123456789', 19), -- Desenvolvedor Mobile
+    (110, '01234567890', 20); -- Analista de Infraestrutura de TI
 
 
 
@@ -378,32 +535,55 @@ CREATE TABLE AtividadeRealizadaPesquisador (
     duracao INT,
     supervisor_cpf CHAR(11),
     PRIMARY KEY (atividade_codigo, pesquisador_cpf),
+    UNIQUE (atividade_codigo), -- Restrições para garantir que cada atividade tenha um único pesquisador
     FOREIGN KEY (atividade_codigo) REFERENCES Atividade(codigo),
     FOREIGN KEY (pesquisador_cpf) REFERENCES Pesquisador(cpf),
     FOREIGN KEY (supervisor_cpf) REFERENCES Pesquisador(cpf)
 );
 
+
 INSERT INTO AtividadeRealizadaPesquisador (atividade_codigo, pesquisador_cpf, data_inicio, duracao, supervisor_cpf) VALUES
 (1, '12345678901', '2023-01-10', 30, '23456789012'),
-(1, '23456789012', '2023-01-10', 30, '34567890123'),
 (2, '34567890123', '2023-02-15', 45, '45678901234'),
-(2, '45678901234', '2023-02-15', 45, '56789012345'),
 (3, '56789012345', '2023-03-20', 60, '67890123456'),
-(3, '67890123456', '2023-03-20', 60, '78901234567'),
 (4, '78901234567', '2023-04-25', 25, '89012345678'),
-(4, '89012345678', '2023-04-25', 25, '90123456789'),
 (5, '90123456789', '2023-05-15', 40, '01234567890'),
-(5, '01234567890', '2023-05-15', 40, '12345678901'),
 (6, '12345678901', '2023-06-10', 50, '23456789012'),
-(6, '23456789012', '2023-06-10', 50, '34567890123'),
 (7, '34567890123', '2023-07-05', 35, '45678901234'),
-(7, '45678901234', '2023-07-05', 35, '56789012345'),
 (8, '56789012345', '2023-08-12', 55, '67890123456'),
-(8, '67890123456', '2023-08-12', 55, '78901234567'),
 (9, '78901234567', '2023-09-18', 45, '89012345678'),
-(9, '89012345678', '2023-09-18', 45, '90123456789'),
 (10, '90123456789', '2023-10-25', 30, '01234567890'),
-(10, '01234567890', '2023-10-25', 30, '12345678901');
+(11, '23456789012', '2023-11-01', 40, '34567890123'),
+(12, '34567890123', '2023-12-10', 50, '45678901234'),
+(13, '45678901234', '2024-01-15', 60, '56789012345'),
+(14, '56789012345', '2024-02-20', 70, '67890123456'),
+(15, '67890123456', '2024-03-25', 80, '78901234567'),
+(16, '78901234567', '2024-04-30', 90, '89012345678'),
+(17, '89012345678', '2024-05-05', 30, '90123456789'),
+(18, '90123456789', '2024-06-10', 40, '01234567890'),
+(19, '01234567890', '2024-07-15', 50, '12345678901'),
+(20, '12345678901', '2024-08-20', 60, '23456789012'),
+(21, '23456789012', '2024-09-25', 70, '34567890123'),
+(22, '34567890123', '2024-10-30', 80, '45678901234'),
+(23, '45678901234', '2024-11-05', 90, '56789012345'),
+(24, '56789012345', '2024-12-10', 30, '67890123456'),
+(25, '67890123456', '2025-01-15', 40, '78901234567'),
+(26, '78901234567', '2025-02-20', 50, '89012345678'),
+(27, '89012345678', '2025-03-25', 60, '90123456789'),
+(28, '90123456789', '2025-04-30', 70, '01234567890'),
+(29, '01234567890', '2025-05-05', 80, '12345678901'),
+(30, '12345678901', '2025-06-10', 90, '23456789012'),
+(31, '23456789012', '2025-07-15', 30, '34567890123'),
+(32, '34567890123', '2025-08-20', 40, '45678901234'),
+(33, '45678901234', '2025-09-25', 50, '56789012345'),
+(34, '56789012345', '2025-10-30', 60, '67890123456'),
+(35, '67890123456', '2025-11-05', 70, '78901234567'),
+(36, '78901234567', '2025-12-10', 80, '89012345678'),
+(37, '89012345678', '2026-01-15', 90, '90123456789'),
+(38, '90123456789', '2026-02-20', 30, '01234567890'),
+(39, '01234567890', '2026-03-25', 40, '12345678901'),
+(40, '12345678901', '2026-04-30', 50, '23456789012');
+
 
 
 
